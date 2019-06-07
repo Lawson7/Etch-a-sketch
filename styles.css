@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  font-family: monospace;
+  font-size: 38px;
+}
+
+#gridContainer {
+  margin-top: 30px;
+  display: inline-block;
+  height: 432px;
+  width: 432px;
+  border: 2px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.pixel {
+  float: left;
+  height: 27px;
+  width: 27px;
+  background-color: pink;
+}
+
+.fill {
+  background-color: purple;
+}

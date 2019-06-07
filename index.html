@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Etch-a-sketch</title>
+</head>
+
+<body>
+  <h1>Etch that sketch!</h1>
+  <button id="reset" onclick="blank()">Reset</button>
+  <br>
+  <div id="gridContainer"></div>
+</body>
+<script type="text/javascript">
+  const gridContainer = document.querySelector('#gridContainer');
+
+  for (i = 0; i < 256; i++) { //creates 256 divs for pixels.
+    const pixel = document.createElement('div');
+    pixel.classList.add('pixel');
+    gridContainer.appendChild(pixel);
+  }
+
+
+  const fill = document.querySelectorAll('.pixel');
+
+  fill.forEach((pixel) => {
+
+    pixel.addEventListener('mouseover', (e) => {
+      pixel.classList.add('fill');
+    });
+  });
+
+  const reset = document.querySelectorAll('.pixel');
+
+  function blank() {
+    reset.forEach((pixel) => {
+      pixel.classList.remove('fill');
+    });
+  };
+</script>
+
+</html>
