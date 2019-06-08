@@ -1,29 +1,30 @@
 body {
   text-align: center;
+  background-color: #e3fcf5;
 }
 
 h1 {
   font-family: monospace;
   font-size: 38px;
+  color: #383736;
 }
 
 #gridContainer {
   margin-top: 30px;
   display: inline-block;
-  height: 432px;
-  width: 432px;
-  border: 2px;
+  height: 398px;
+  width: 398px;
+  border: 30px;
   border-style: solid;
-  border-radius: 5px;
+  border-radius: 10px;
+  border-color: #f29d54;
 }
 
 .pixel {
   float: left;
-  height: 27px;
-  width: 27px;
-  background-color: pink;
+  background-color: #fcf5ef;
 }
 
 .fill {
-  background-color: purple;
+  background-color: #383736;
 }

@@ -9,36 +9,12 @@
 
 <body>
   <h1>Etch that sketch!</h1>
-  <button id="reset" onclick="blank()">Reset</button>
+  <button id="reset" onclick="reset()">RESET</button>
   <br>
   <div id="gridContainer"></div>
+  <script type="text/javascript" src="script.js">
+
+  </script>
 </body>
-<script type="text/javascript">
-  const gridContainer = document.querySelector('#gridContainer');
-
-  for (i = 0; i < 256; i++) { //creates 256 divs for pixels.
-    const pixel = document.createElement('div');
-    pixel.classList.add('pixel');
-    gridContainer.appendChild(pixel);
-  }
-
-
-  const fill = document.querySelectorAll('.pixel');
-
-  fill.forEach((pixel) => {
-
-    pixel.addEventListener('mouseover', (e) => {
-      pixel.classList.add('fill');
-    });
-  });
-
-  const reset = document.querySelectorAll('.pixel');
-
-  function blank() {
-    reset.forEach((pixel) => {
-      pixel.classList.remove('fill');
-    });
-  };
-</script>
 
 </html>
